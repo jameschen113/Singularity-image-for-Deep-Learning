@@ -1,22 +1,34 @@
 # Singularity-image-for-Deep-Learning
 ## We assumed you have already been under speruser mode and Singularity has been installed properly.
 - Grab the docker image of Ubuntu 16.04 LTS to the local directory
-```singularity build --sandbox ub1604-python3-tensorflowr1.7-cuda8-gpu/ docker://ubuntu:xenial```
+```
+singularity build --sandbox ub1604-python3-tensorflowr1.7-cuda8-gpu/ docker://ubuntu:xenial
+```
 
 - Enter the OS of the image
-```singularity shell --writable ub1604-python3-tensorflowr1.7-cuda8-gpu/```
+```
+singularity shell --writable ub1604-python3-tensorflowr1.7-cuda8-gpu/
+```
 
 - System update
-```Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get update```
+```
+Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get update
+```
 
 - Install system default python
-```Singularity uub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install python3 python3-pip```
+```
+Singularity uub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install python3 python3-pip
+```
 
 - Setup locality for pip
-```Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> export LC_ALL=C```
+```
+Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> export LC_ALL=C
+```
 
 - Install python3 module for tensorflow
-```Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install python3-numpy python3-dev python3-wheel python3-six```
+```
+Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install python3-numpy python3-dev python3-wheel python3-six
+```
 
 - Download bazel 0.11.1 (bazel_0.11.1-linux-x86_64.deb) and install it
 ```
