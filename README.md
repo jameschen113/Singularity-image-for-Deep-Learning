@@ -30,7 +30,7 @@ Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> export LC_ALL=C
 Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install python3-numpy python3-dev python3-wheel python3-six
 ```
 
-- Download bazel 0.11.1 (bazel_0.11.1-linux-x86_64.deb) and install it
+- Download [bazel_0.11.1-linux-x86_64.deb](https://github.com/bazelbuild/bazel/releases/download/0.11.1/bazel_0.11.1-linux-x86_64.deb) and install it
 ```
 Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install openjdk-8-jdk build-essential zip
 Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install bash-completion zlib1g-dev
@@ -46,7 +46,7 @@ Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get update
 Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> apt-get install cuda-8-0 cuda-toolkit-8-0
 ```
 
-- Install CUDNN Download [Version 7.0.5 for CUDA8] (https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.1.2/prod/8.0_20180316/cudnn-8.0-linux-x64-v7.1) as the example
+- Install CUDNN Download [Version 7.0.5 for CUDA8](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.1.2/prod/8.0_20180316/cudnn-8.0-linux-x64-v7.1) as the example
 ```
 Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> tar -xzvf cudnn-8.0-linux-x64-v7.1.solitairetheme8
 Singularity ub1604-python3-tensorflowr1.7-cuda8-gpu:~> cp cuda/include/* /usr/local/cuda-8.0/include/
