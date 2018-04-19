@@ -19,16 +19,20 @@
 ```apt-get install python3-numpy python3-dev python3-wheel python3-six```
 
 ## Download bazel 0.11.1 (bazel_0.11.1-linux-x86_64.deb) and install it
-```apt-get install openjdk-8-jdk build-essential zip```
-```apt-get install bash-completion zlib1g-dev```
-```dpkg -i bazel_0.11.1-linux-x86_64.deb```
+```
+apt-get install openjdk-8-jdk build-essential zip
+apt-get install bash-completion zlib1g-dev
+dpkg -i bazel_0.11.1-linux-x86_64.deb
+```
 
 ## Install CUDA 8.0
-```apt-get install git wget```
-```wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb```
-```dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb```
-```apt-get update```
-```apt-get install cuda-8-0 cuda-toolkit-8-0```
+```
+apt-get install git wget
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+apt-get update
+apt-get install cuda-8-0 cuda-toolkit-8-0
+```
 
 ## Install CUDNN Download [Version 7.0.5 for CUDA8] (https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.1.2/prod/8.0_20180316/cudnn-8.0-linux-x64-v7.1) as the example
 ```
