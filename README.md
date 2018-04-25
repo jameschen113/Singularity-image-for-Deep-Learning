@@ -1,5 +1,5 @@
 # Singularity-image-for-Deep-Learning
-## We assumed you have already been under speruser mode and Singularity has been installed properly.
+## We assumed you have already been under super-user mode and Singularity has been installed properly.
 - Grab the docker image of Ubuntu 16.04 LTS to the local directory
 ```
 singularity build --sandbox ub1604-python3-tensorflowr1.7-cuda8-gpu/ docker://ubuntu:xenial
